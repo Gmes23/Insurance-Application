@@ -26,10 +26,12 @@ class UserForm extends React.Component {
             email_address: '',
             phone_number: '',
             company_name: '',
+            effective_date: 'string',
             status: 'pending',
             primary_al: false,
             primary_gl: false,
             primary_el: false,
+            isDeleted: false
         }
         this.onChange = this.onChange.bind(this);
         this.handleFormSubmit = this.handleFormSubmit.bind(this)
@@ -56,16 +58,18 @@ class UserForm extends React.Component {
         e.preventDefault();
         const data = this.state;
         const requestOptions = {
+            credentials: 'include',
             method: 'POST',
             mode: 'no-cors',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify( data )
+            body: JSON.stringify( {data} )
         };
-        fetch('http://localhost:3001/users', requestOptions)
+        fetch('http://localhost:4000/user', requestOptions)
             .then(response => response.json())
+            .catch(error => console.error('Error:', error))
             .then(response => console.log('succes', response));
     
-        console.log(this.state, "handleFormSubmit")
+        console.log(data, "handleFormSubmit")
     }
 
     render() {

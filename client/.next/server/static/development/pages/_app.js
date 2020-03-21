@@ -144,7 +144,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var primereact_resources_primereact_min_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(primereact_resources_primereact_min_css__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var primeicons_primeicons_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! primeicons/primeicons.css */ "./node_modules/primeicons/primeicons.css");
 /* harmony import */ var primeicons_primeicons_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(primeicons_primeicons_css__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "/Users/gm/Desktop/Programming/Javascript/Nest/client/pages/_app.js";
+var _jsxFileName = "/Users/gm/Desktop/workFolder/client/pages/_app.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
