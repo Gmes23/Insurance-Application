@@ -58,11 +58,9 @@ class UserForm extends React.Component {
         e.preventDefault();
         const data = this.state;
         const requestOptions = {
-            credentials: 'include',
             method: 'POST',
-            mode: 'no-cors',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify( {data} )
+            body: JSON.stringify(data)
         };
         fetch('http://localhost:4000/user', requestOptions)
             .then(response => response.json())
