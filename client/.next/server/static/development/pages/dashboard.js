@@ -2094,6 +2094,7 @@ class DataTableTemplatingDemo extends react__WEBPACK_IMPORTED_MODULE_0___default
       type: "button",
       icon: "pi pi-pencil",
       className: "p-button-warning",
+      onClick: onclick,
       __self: this,
       __source: {
         fileName: _jsxFileName,
@@ -2142,12 +2143,10 @@ class DataTableTemplatingDemo extends react__WEBPACK_IMPORTED_MODULE_0___default
       }
     }));
 
-    var footer = "There are " + carCount + ' cars';
-    var name = this.state.cars.first_name;
-    console.log(this.state.cars, 'this is the state');
-    const {
-      cars
-    } = this.state; // return (
+    var footer = "There are " + carCount + ' cars'; // var name = this.state.cars.first_name;
+
+    console.log(this.state.cars, 'this is the state'); // console.log(cars,' cars')
+    // return (
     //     <ul>
     //       {cars.map(car => (
     //         <li key={item.name}>
@@ -2161,14 +2160,14 @@ class DataTableTemplatingDemo extends react__WEBPACK_IMPORTED_MODULE_0___default
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 90,
+        lineNumber: 91,
         columnNumber: 13
       }
     }, __jsx("div", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 92,
+        lineNumber: 93,
         columnNumber: 17
       }
     }, __jsx("div", {
@@ -2176,7 +2175,7 @@ class DataTableTemplatingDemo extends react__WEBPACK_IMPORTED_MODULE_0___default
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 93,
+        lineNumber: 94,
         columnNumber: 21
       }
     }, __jsx("div", {
@@ -2184,21 +2183,21 @@ class DataTableTemplatingDemo extends react__WEBPACK_IMPORTED_MODULE_0___default
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 94,
+        lineNumber: 95,
         columnNumber: 25
       }
     }, __jsx("h1", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 95,
+        lineNumber: 96,
         columnNumber: 29
       }
     }, "DataTable - Templating"), __jsx("p", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 96,
+        lineNumber: 97,
         columnNumber: 29
       }
     }, "Custom content at header, body and footer sections are supported via templating."))), __jsx("div", {
@@ -2206,35 +2205,35 @@ class DataTableTemplatingDemo extends react__WEBPACK_IMPORTED_MODULE_0___default
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 101,
+        lineNumber: 102,
         columnNumber: 21
       }
-    }, cars.map(car => __jsx(primereact_datatable__WEBPACK_IMPORTED_MODULE_1__["DataTable"], {
+    }, __jsx(primereact_datatable__WEBPACK_IMPORTED_MODULE_1__["DataTable"], {
       value: this.state.cars,
       header: header,
       footer: footer,
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 104,
+        lineNumber: 105,
         columnNumber: 29
       }
     }, __jsx(primereact_column__WEBPACK_IMPORTED_MODULE_2__["Column"], {
-      field: "vin",
-      header: "Vin",
+      field: "first_name",
+      header: "name",
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 105,
+        lineNumber: 106,
         columnNumber: 33
       }
-    }, car.first_name), __jsx(primereact_column__WEBPACK_IMPORTED_MODULE_2__["Column"], {
+    }), __jsx(primereact_column__WEBPACK_IMPORTED_MODULE_2__["Column"], {
       field: "year",
       header: "Year",
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 106,
+        lineNumber: 107,
         columnNumber: 33
       }
     }), __jsx(primereact_column__WEBPACK_IMPORTED_MODULE_2__["Column"], {
@@ -2247,7 +2246,7 @@ class DataTableTemplatingDemo extends react__WEBPACK_IMPORTED_MODULE_0___default
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 107,
+        lineNumber: 108,
         columnNumber: 33
       }
     }), __jsx(primereact_column__WEBPACK_IMPORTED_MODULE_2__["Column"], {
@@ -2257,7 +2256,7 @@ class DataTableTemplatingDemo extends react__WEBPACK_IMPORTED_MODULE_0___default
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 108,
+        lineNumber: 109,
         columnNumber: 33
       }
     }), __jsx(primereact_column__WEBPACK_IMPORTED_MODULE_2__["Column"], {
@@ -2269,10 +2268,10 @@ class DataTableTemplatingDemo extends react__WEBPACK_IMPORTED_MODULE_0___default
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 109,
+        lineNumber: 110,
         columnNumber: 33
       }
-    }))))));
+    })))));
   }
 
 }

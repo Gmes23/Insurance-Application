@@ -53,7 +53,7 @@ class DataTableTemplatingDemo extends React.Component {
     actionTemplate(rowData, column) {
         return <div>
             <Button type="button" icon="pi pi-search" className="p-button-success" style={{ marginRight: '.5em' }}></Button>
-            <Button type="button" icon="pi pi-pencil" className="p-button-warning"></Button>
+            <Button type="button" icon="pi pi-pencil" className="p-button-warning" onClick={onclick}></Button>
         </div>;
     }
 
@@ -67,15 +67,16 @@ class DataTableTemplatingDemo extends React.Component {
             .then(data => this.setState({ cars: data }));
         // console.log(this.state)
     }
-
+    
     render() {
         var carCount = this.state.cars ? this.state.cars.length : 0;
         var header = <div className="p-clearfix" style={{ 'lineHeight': '1.87em' }}>List of Cars <Button icon="pi pi-refresh" style={{ 'float': 'right' }} /></div>;
         var footer = "There are " + carCount + ' cars';
-        var name = this.state.cars.first_name;
+        // var name = this.state.cars.first_name;
         console.log(this.state.cars, 'this is the state')
 
-        const {cars} = this.state;
+        
+        // console.log(cars,' cars')
 
         // return (
         //     <ul>
@@ -99,16 +100,16 @@ class DataTableTemplatingDemo extends React.Component {
 
 
                     <div className="content-section implementation">
-                        {cars.map(car => (
+                        
                         
                             <DataTable value={this.state.cars} header={header} footer={footer}>
-                                <Column field="vin" header="Vin">{car.first_name}</Column>
+                                <Column field="first_name" header="name" />
                                 <Column field="year" header="Year" />
                                 <Column field="brand" header="Brand" body={this.state.cars.first_name} style={{ textAlign: 'center' }} />
                                 <Column field="color" header="Color" body={this.colorTemplate} />
                                 <Column body={this.actionTemplate} style={{ textAlign: 'center', width: '8em' }} />
                             </DataTable>
-                        ))}
+                 
                     </div>
                 </div>
             </Layout>

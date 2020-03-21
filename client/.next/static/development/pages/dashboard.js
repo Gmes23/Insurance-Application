@@ -14535,6 +14535,7 @@ var DataTableTemplatingDemo = /*#__PURE__*/function (_React$Component) {
         type: "button",
         icon: "pi pi-pencil",
         className: "p-button-warning",
+        onClick: onclick,
         __self: this,
         __source: {
           fileName: _jsxFileName,
@@ -14565,8 +14566,6 @@ var DataTableTemplatingDemo = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      var _this3 = this;
-
       var carCount = this.state.cars ? this.state.cars.length : 0;
 
       var header = __jsx("div", {
@@ -14593,10 +14592,10 @@ var DataTableTemplatingDemo = /*#__PURE__*/function (_React$Component) {
         }
       }));
 
-      var footer = "There are " + carCount + ' cars';
-      var name = this.state.cars.first_name;
-      console.log(this.state.cars, 'this is the state');
-      var cars = this.state.cars; // return (
+      var footer = "There are " + carCount + ' cars'; // var name = this.state.cars.first_name;
+
+      console.log(this.state.cars, 'this is the state'); // console.log(cars,' cars')
+      // return (
       //     <ul>
       //       {cars.map(car => (
       //         <li key={item.name}>
@@ -14610,14 +14609,14 @@ var DataTableTemplatingDemo = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 90,
+          lineNumber: 91,
           columnNumber: 13
         }
       }, __jsx("div", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 92,
+          lineNumber: 93,
           columnNumber: 17
         }
       }, __jsx("div", {
@@ -14625,7 +14624,7 @@ var DataTableTemplatingDemo = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 93,
+          lineNumber: 94,
           columnNumber: 21
         }
       }, __jsx("div", {
@@ -14633,21 +14632,21 @@ var DataTableTemplatingDemo = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 94,
+          lineNumber: 95,
           columnNumber: 25
         }
       }, __jsx("h1", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 95,
+          lineNumber: 96,
           columnNumber: 29
         }
       }, "DataTable - Templating"), __jsx("p", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 96,
+          lineNumber: 97,
           columnNumber: 29
         }
       }, "Custom content at header, body and footer sections are supported via templating."))), __jsx("div", {
@@ -14655,75 +14654,73 @@ var DataTableTemplatingDemo = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 101,
+          lineNumber: 102,
           columnNumber: 21
         }
-      }, cars.map(function (car) {
-        return __jsx(primereact_datatable__WEBPACK_IMPORTED_MODULE_7__["DataTable"], {
-          value: _this3.state.cars,
-          header: header,
-          footer: footer,
-          __self: _this3,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 104,
-            columnNumber: 29
-          }
-        }, __jsx(primereact_column__WEBPACK_IMPORTED_MODULE_8__["Column"], {
-          field: "vin",
-          header: "Vin",
-          __self: _this3,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 105,
-            columnNumber: 33
-          }
-        }, car.first_name), __jsx(primereact_column__WEBPACK_IMPORTED_MODULE_8__["Column"], {
-          field: "year",
-          header: "Year",
-          __self: _this3,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 106,
-            columnNumber: 33
-          }
-        }), __jsx(primereact_column__WEBPACK_IMPORTED_MODULE_8__["Column"], {
-          field: "brand",
-          header: "Brand",
-          body: _this3.state.cars.first_name,
-          style: {
-            textAlign: 'center'
-          },
-          __self: _this3,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 107,
-            columnNumber: 33
-          }
-        }), __jsx(primereact_column__WEBPACK_IMPORTED_MODULE_8__["Column"], {
-          field: "color",
-          header: "Color",
-          body: _this3.colorTemplate,
-          __self: _this3,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 108,
-            columnNumber: 33
-          }
-        }), __jsx(primereact_column__WEBPACK_IMPORTED_MODULE_8__["Column"], {
-          body: _this3.actionTemplate,
-          style: {
-            textAlign: 'center',
-            width: '8em'
-          },
-          __self: _this3,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 109,
-            columnNumber: 33
-          }
-        }));
-      }))));
+      }, __jsx(primereact_datatable__WEBPACK_IMPORTED_MODULE_7__["DataTable"], {
+        value: this.state.cars,
+        header: header,
+        footer: footer,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 105,
+          columnNumber: 29
+        }
+      }, __jsx(primereact_column__WEBPACK_IMPORTED_MODULE_8__["Column"], {
+        field: "first_name",
+        header: "name",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 106,
+          columnNumber: 33
+        }
+      }), __jsx(primereact_column__WEBPACK_IMPORTED_MODULE_8__["Column"], {
+        field: "year",
+        header: "Year",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 107,
+          columnNumber: 33
+        }
+      }), __jsx(primereact_column__WEBPACK_IMPORTED_MODULE_8__["Column"], {
+        field: "brand",
+        header: "Brand",
+        body: this.state.cars.first_name,
+        style: {
+          textAlign: 'center'
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 108,
+          columnNumber: 33
+        }
+      }), __jsx(primereact_column__WEBPACK_IMPORTED_MODULE_8__["Column"], {
+        field: "color",
+        header: "Color",
+        body: this.colorTemplate,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 109,
+          columnNumber: 33
+        }
+      }), __jsx(primereact_column__WEBPACK_IMPORTED_MODULE_8__["Column"], {
+        body: this.actionTemplate,
+        style: {
+          textAlign: 'center',
+          width: '8em'
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 110,
+          columnNumber: 33
+        }
+      })))));
     }
   }]);
 
