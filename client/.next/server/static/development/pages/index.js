@@ -376,7 +376,7 @@ class UserForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       phone_number: '',
       company_name: '',
       effective_date: '',
-      status: 'pending',
+      status: 'PENDING',
       primary_al: false,
       primary_gl: false,
       primary_el: false,
@@ -404,7 +404,8 @@ class UserForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 
     let today = new Date().toJSON().slice(0, 10).replace(/-/g, '/');
     this.setState({
-      effective_date: today
+      effective_date: today,
+      status: 'SUBMITTED'
     });
     const data = this.state;
     const requestOptions = {
@@ -423,21 +424,21 @@ class UserForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 64,
+        lineNumber: 67,
         columnNumber: 13
       }
     }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Row"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 65,
+        lineNumber: 68,
         columnNumber: 17
       }
     }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 66,
+        lineNumber: 69,
         columnNumber: 21
       }
     }, __jsx(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -445,14 +446,14 @@ class UserForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 67,
+        lineNumber: 70,
         columnNumber: 25
       }
     }, __jsx(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_1___default.a.Row, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 68,
+        lineNumber: 71,
         columnNumber: 29
       }
     }, __jsx(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_1___default.a.Group, {
@@ -461,14 +462,14 @@ class UserForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 69,
+        lineNumber: 72,
         columnNumber: 33
       }
     }, __jsx(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_1___default.a.Label, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 70,
+        lineNumber: 73,
         columnNumber: 37
       }
     }, "First Name"), __jsx(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_1___default.a.Control, {
@@ -479,7 +480,7 @@ class UserForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 71,
+        lineNumber: 74,
         columnNumber: 37
       }
     })), __jsx(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_1___default.a.Group, {
@@ -488,14 +489,14 @@ class UserForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 74,
+        lineNumber: 77,
         columnNumber: 33
       }
     }, __jsx(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_1___default.a.Label, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 75,
+        lineNumber: 78,
         columnNumber: 37
       }
     }, "Last Name"), __jsx(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_1___default.a.Control, {
@@ -506,14 +507,14 @@ class UserForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 76,
+        lineNumber: 79,
         columnNumber: 37
       }
     }))), __jsx(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_1___default.a.Row, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 80,
+        lineNumber: 83,
         columnNumber: 29
       }
     }, __jsx(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_1___default.a.Group, {
@@ -522,14 +523,14 @@ class UserForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 81,
+        lineNumber: 84,
         columnNumber: 33
       }
     }, __jsx(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_1___default.a.Label, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 82,
+        lineNumber: 85,
         columnNumber: 37
       }
     }, "Email"), __jsx(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_1___default.a.Control, {
@@ -540,7 +541,7 @@ class UserForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 83,
+        lineNumber: 86,
         columnNumber: 37
       }
     })), __jsx(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_1___default.a.Group, {
@@ -549,14 +550,14 @@ class UserForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 86,
+        lineNumber: 89,
         columnNumber: 33
       }
     }, __jsx(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_1___default.a.Label, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 87,
+        lineNumber: 90,
         columnNumber: 37
       }
     }, "Phone Number"), __jsx(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_1___default.a.Control, {
@@ -567,7 +568,7 @@ class UserForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 88,
+        lineNumber: 91,
         columnNumber: 37
       }
     }))), __jsx(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_1___default.a.Group, {
@@ -575,14 +576,14 @@ class UserForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 97,
+        lineNumber: 100,
         columnNumber: 29
       }
     }, __jsx(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_1___default.a.Label, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 98,
+        lineNumber: 101,
         columnNumber: 33
       }
     }, "Company Name"), __jsx(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_1___default.a.Control, {
@@ -592,7 +593,7 @@ class UserForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 99,
+        lineNumber: 102,
         columnNumber: 33
       }
     })), __jsx(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_1___default.a.Group, {
@@ -600,7 +601,7 @@ class UserForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 105,
+        lineNumber: 108,
         columnNumber: 29
       }
     }, __jsx(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_1___default.a.Check, {
@@ -612,7 +613,7 @@ class UserForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 106,
+        lineNumber: 109,
         columnNumber: 33
       }
     })), __jsx(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_1___default.a.Group, {
@@ -620,7 +621,7 @@ class UserForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 114,
+        lineNumber: 117,
         columnNumber: 29
       }
     }, __jsx(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_1___default.a.Check, {
@@ -632,7 +633,7 @@ class UserForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 115,
+        lineNumber: 118,
         columnNumber: 33
       }
     })), __jsx(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_1___default.a.Group, {
@@ -640,7 +641,7 @@ class UserForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 123,
+        lineNumber: 126,
         columnNumber: 29
       }
     }, __jsx(react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_1___default.a.Check, {
@@ -652,7 +653,7 @@ class UserForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 124,
+        lineNumber: 127,
         columnNumber: 33
       }
     })), __jsx(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -661,7 +662,7 @@ class UserForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 132,
+        lineNumber: 135,
         columnNumber: 29
       }
     }, "Submit")))));

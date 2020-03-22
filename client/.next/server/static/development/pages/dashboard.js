@@ -2330,7 +2330,7 @@ class DataTableEditDemo2 extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Co
         lineNumber: 155,
         columnNumber: 29
       }
-    }, "DataTable - Edit"), __jsx("p", {
+    }, "DataTable"), __jsx("p", {
       __self: this,
       __source: {
         fileName: _jsxFileName,

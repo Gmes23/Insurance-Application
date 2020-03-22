@@ -13,7 +13,7 @@ class UserForm extends React.Component {
             phone_number: '',
             company_name: '',
             effective_date: '',
-            status: 'pending',
+            status: 'PENDING',
             primary_al: false,
             primary_gl: false,
             primary_el: false,
@@ -44,7 +44,10 @@ class UserForm extends React.Component {
         e.preventDefault();
         // This uses RegExr to get the current date 
         let today = new Date().toJSON().slice(0, 10).replace(/-/g, '/');
-        this.setState({ effective_date: today })
+        this.setState({ 
+            effective_date: today,
+            status: 'SUBMITTED'
+        })
         const data = this.state;
         const requestOptions = {
             method: 'POST',

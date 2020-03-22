@@ -30909,7 +30909,7 @@ var DataTableEditDemo2 = /*#__PURE__*/function (_React$Component) {
           lineNumber: 155,
           columnNumber: 29
         }
-      }, "DataTable - Edit"), __jsx("p", {
+      }, "DataTable"), __jsx("p", {
         __self: this,
         __source: {
           fileName: _jsxFileName,

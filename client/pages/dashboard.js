@@ -152,7 +152,7 @@ class DataTableEditDemo2 extends React.Component {
                 <div>
                     <div className="content-section introduction">
                         <div className="feature-intro">
-                            <h1>DataTable - Edit</h1>
+                            <h1>DataTable</h1>
                             <p>User Data</p>
                         </div>
                     </div>
