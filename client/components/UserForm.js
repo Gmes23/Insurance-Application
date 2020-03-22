@@ -26,7 +26,7 @@ class UserForm extends React.Component {
             email_address: '',
             phone_number: '',
             company_name: '',
-            effective_date: 'string',
+            effective_date: '',
             status: 'pending',
             primary_al: false,
             primary_gl: false,
@@ -56,6 +56,9 @@ class UserForm extends React.Component {
 
     handleFormSubmit(e) {
         e.preventDefault();
+        // This uses RegExr to get the current date 
+        let today = new Date().toJSON().slice(0,10).replace(/-/g,'/');
+        this.setState({effective_date: today})
         const data = this.state;
         const requestOptions = {
             method: 'POST',
@@ -168,8 +171,6 @@ class UserForm extends React.Component {
                         onChange={this.onChange}
                          />
                     </Form.Group>
-
-
                     <Button variant="primary" type="submit">
                         Submit
                     </Button>

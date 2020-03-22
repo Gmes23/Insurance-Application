@@ -1,6 +1,11 @@
 import Header from "./Header";
 import NavBar from "./NavBar";
 import Head from "next/head";
+import { Container, Row, Col } from 'react-bootstrap';
+
+const formStyle ={
+    padding: '15%'
+}
 
 const Layout = props => (
     <div>
@@ -12,9 +17,16 @@ const Layout = props => (
             <link rel="stylesheet" href="../static/public/css/primeicons/primeicons.css"/>
 
         </Head>
-        <Header />
-        <div>{props.children}</div>
+        {/* <Header /> */}
         <NavBar />
+
+        <Container fluid="md">
+        <Row>
+            <Col>
+                <div>{props.children}</div>
+            </Col>
+        </Row>
+        </Container>
     </div>
 );
 
