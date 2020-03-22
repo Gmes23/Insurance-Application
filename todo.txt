@@ -16,5 +16,21 @@ hits to db now we need to connect fron end to back end
 
 
 on user submit, stop empty data from being submitted
-on submit enter effective date 
-users can be delete, need to edit users
+refresh view on dashboard when ondelete is pressed
+
+
+
+// const UserInfo = [
+//     {link: "/", name: "Program"},
+//     {link: "/info", name: "Info"},
+//     {link: "/booking", name: "Booking"},
+//     {link: "/FAQ", name: "FAQ"},
+//     {link: "/contact", name: "Contact"},
+//   ]
+
+//   const UILink = ({link, name}) => 
+//     <LI_list>
+//       <Alink to={link} onClick={this.toggleExpandedMenu}> {name} </Alink> <Span />
+//     </LI_list>
+
+//   const UILinkContainer = () => routes.map(UILink)
