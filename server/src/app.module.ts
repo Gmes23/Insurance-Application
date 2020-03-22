@@ -11,19 +11,3 @@ import { UserModule } from './user/user.module';
   providers: [AppService],
 })
 export class AppModule {}
-
-// Module({
-//   imports: [TypeOrmModule.forRoot({
-//     type: 'postgres',
-//     host: 'localhost',
-//     port: 5432,
-//     username: 'gm',
-//     password: 'root',
-//     database: 'userapplications',
-//     entities: [],
-//     synchronize: true,
-//   }),],
-//   controllers: [AppController],
-//   providers: [AppService],
-// })
-// export class AppModule {}
